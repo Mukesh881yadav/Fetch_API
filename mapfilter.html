@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+<button>click on button you will get chaining result of map filter and reduce</button>
+    <script>
+        let a=[2,3,4,5,6,9];
+        let result=a.map((Element)=>{
+            return  Element*2;
+        }).filter((Element)=>{
+    return Element>10;
+        }).reduce((accumulator,Element)=>{
+    return accumulator+=Element;
+        });
+        console.log(result);
+    </script>
+    
+</body>
+</html>
